@@ -1,0 +1,285 @@
+@charset "utf8";
+
+@import url('https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap');
+
+* { text-align: center; }
+
+:root{
+  --color_1: #f22f33;
+  --color_2: #2C2F58;
+  --color_3: #4F345A;
+  --color_4: #5D4E6D;
+  --color_5: #8FA998;
+  /* #f22f33; #2C2F58; #4F345A; #5D4E6D; #8FA998; */
+}
+
+h1,h2
+{
+  font-family: 'Cardo', serif;
+  font-size: 28px;
+  text-align: center;
+}
+
+.top { background: #fff url("../images/jpg/cabecalho/parceiros.jpg") no-repeat center center / cover; }
+
+.overline
+{
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.ov_header { background: rgba(255,255,255,.9); }
+
+.logo, .menu
+{
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+.logo img { width: 200px; }
+
+.menu { background: var(--color_1); }
+
+.menu div ul
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu div ul li a
+{
+  display: block;
+  padding: 10px;
+  color: #fff;
+  transition: all .3s ease-in;
+  transition: filter 0.2s;
+}
+
+.menu div ul li a:hover { filter: brightness(90%); }
+
+.btn_contato
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  color: var(--color_2);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.btn_contato img
+{
+  width: 25px;
+  margin: 0 0 0 10px;
+}
+
+/* Banner */
+
+.banner
+{
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: #fff url("../images/jpg/destaques/ferramentas-banner.jpg") no-repeat top center / cover fixed;
+}
+
+.ov_banner { background: rgba(0,0,0,.5); }
+
+.destaque
+{
+  max-width: 500px;
+  height: 100%;
+  color: #fefefe;
+  text-align: center;
+  padding: 10px 10px 50px 10px;
+  align-content: center;
+}
+
+.destaque main h1
+{
+  font-size: 32px;
+  margin-bottom: 3px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.destaque main h3
+{
+  margin-bottom: 22px;
+  font-size: 22px;
+  color: #fff;
+}
+
+.destaque main h3::before
+{
+  content: "";
+  display: block;
+  height: 1px;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  background: #fff;
+}
+
+.destaque main p
+{
+  font-size: 16px;
+  padding: 0 20px;
+  color: #fff;
+}
+
+/* card entrega */
+
+.entrega-card
+{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.entrega-card h1  { margin-bottom: 30px; }
+
+.entrega-card img 
+{ 
+  width: 120px; 
+  margin-right: 20px;
+}
+
+.entrega-card div { padding: 20px 0; }
+
+.entrega-card h3 
+{
+  color: #888888;
+  margin-bottom: 20px; 
+  padding: 0 20px;
+}
+
+.entrega-card p { padding: 0 20px; }
+
+@media screen and (min-width: 768px)
+{
+  .entrega-card h3  { text-align: left; }
+  .entrega-card p   { text-align: left; }
+  .destaque main h1 { font-size: 36px;  }
+  .entrega-card h1  { font-size: 30px;  }
+}
+
+/* produros */
+
+.produtos    { padding-bottom: 100px; }
+
+.produtos h1 
+{ 
+  margin-bottom: 35px;
+  padding: 0 20px;
+}
+
+.produtos p { padding: 0px 20px 80px 20px; }
+
+@media screen and (min-width: 768px)
+{
+  .produtos p { padding: 0px 20px 0px 20px; }  
+}
+
+.produtos-item 
+{ 
+  margin-top: 65px; 
+  background: #fff;
+  padding: 25px; 
+}
+
+.produtos-item  h2 { margin: 15px 0px 10px 0px; }
+.produtos-item img { width: 100%; }
+
+/* Rodape */
+
+.rodape 
+{ 
+  background: #fff;
+  padding-top: 20px; 
+  border-top: 1px solid rgba(51,51,51,.2);
+}
+
+.rodape-descricao h2 { font-size: 38px; }
+
+.rodape-descricao h2 span:nth-child(2)
+{
+  font-size: 28px;
+  display: block;
+  line-height: 0px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+
+.rodape-descricao p { padding: 0 40px 30px 40px; }
+
+.fone-rodape 
+{ 
+  position: relative;
+  background: #fff url("../images/jpg/rodape/parafuso_solitario.jpg") no-repeat center center / cover;
+  min-height: 250px;
+}
+
+.fone-rodape h2 
+{ 
+  width: 100%;
+  font-style: italic;
+  font-size: 30px;
+  padding-top: 30px;
+  margin-bottom: 7px;
+}
+
+.fone-rodape h2 a:hover { color: var(--color_1); }
+.fone-rodape h4 a:hover { color: var(--color_1); }
+
+.ov_fone { background: rgba(255,255,255,.7); }
+
+.funcionamento
+{
+  width: 100%;
+  height: 100%;
+  background: #fff url("../images/jpg/rodape/telhado.jpg") no-repeat center center / cover;
+}
+
+.horarios
+{
+  background: rgba(255,255,255,.9);
+  min-height: 250px;
+}
+
+.horarios div { width: 100%; }
+
+.horarios div h2 
+{ 
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding-top: 30px; 
+}
+
+.fim-page 
+{ 
+  background: var(--color_2);
+  padding: 10px 0;
+}
+
+.fim-page a, .fim-page p { color: #fff; }
+
+.fim-page a 
+{  
+  font-style: italic;
+  transition: filter 0.2s;
+}
+
+.fim-page a:hover { filter: brightness(90%); }
