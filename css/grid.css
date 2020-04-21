@@ -10,8 +10,6 @@
 	text-decoration: none;
 	list-style: none;
 	box-sizing: border-box;
-	/* opcional */ 
-	color: #333
 }
 
 body{
@@ -22,7 +20,6 @@ body{
 	-webkit-font-smoothing: antialiased;
 	/* opcional */ 
 	color: #333;
-	background: #f1f1f1;
 }
 
 input, button, textarea{
@@ -56,6 +53,7 @@ a{
 }
 	.row{ max-width: 1200px; }
 	.ai_center{ align-items: center; }
+	.ai_start{ align-items: flex-start; }
 	.jc_center{ justify-content: center; }
 	.ai_jc_center{ align-items: center; justify-content: center; }
 
