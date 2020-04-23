@@ -18,6 +18,8 @@
 
 body { text-align: center; }
 
+html { scroll-behavior: smooth; }
+
 h1
 { 
 	font-family: Logo; 
@@ -26,10 +28,14 @@ h1
 
 p { font-style: italic; }
 
-header
+header#cabecalho
 {
-	background: #00663f;
+	width: 100%;
 	text-align: center;
+	background: #00663f;
+	position: fixed;
+	top: 0px;
+	left: 0;
 }
 
 header a 
@@ -38,6 +44,9 @@ header a
 	color: #fff;
 	font-weight: 1; 
 }
+
+#home { padding-top: 230px; }
+#projetos{ padding-top: 110px; }
 
 @media screen and (min-width: 768px)
 {
@@ -67,7 +76,6 @@ nav a:hover {	filter: brightness(85%); }
 
 .boas-vindas
 {
-	padding-top: 100px;
 	padding-bottom: 150px;
 	max-width: 450px;
 }

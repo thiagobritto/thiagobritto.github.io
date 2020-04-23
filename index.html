@@ -26,7 +26,7 @@
 	
 	<body>
 			<!-- HEADER -->
-			<header>
+			<header id="cabecalho">
 				<div class="row ai_jc_center">
 
 					<div class="m6 logo">
@@ -39,9 +39,9 @@
 
 					<nav class="m6">
 						<ul>
-							<li><a href="">Home</a></li>
-							<li><a href="">Projetos</a></li>
-							<li><a href="http://novoscaminhos.ufrn.br/pages/registrations">Noticias</a></li>
+							<li><a href="#home">Home</a></li>
+							<li><a href="#projetos">Projetos</a></li>
+							<li><a href="#">Noticias</a></li>
 						</ul>
 					</nav>
 
@@ -50,18 +50,18 @@
 			<!-- END HEADER -->
 
 			<!-- CARD BOAS VINDAS -->
-			<section>
+			<section id="home">
 				<div class="row ai_jc_center boas-vindas">
 
-					<h1>Curabitur ac lacus</h1>
+					<h1>Programador Web</h1>
 					<p>Nulla facilisis arcu et justo lobortis, vel scelerisque velit congue. Cras semper velit leo, ut cursus nunc lacinia in. Nunc ultrices, sapien ut pellentesque tincidunt, augue libero dictum lectus,</p>
-					<a href="">Proin</a>
+					<a href="">Github</a>
 				
 				</div>
 			</section>
 			<!-- END BOAS VINDAS -->
 
-			<section>
+			<section id="projetos">
 				<article class="row ai_start article-impar">
 					<div class="m5">
 						<div class="projeto-impar">
@@ -126,5 +126,8 @@
 				</div>
 			</footer>
 			<!-- END FOOTER -->
+
+			<!-- Scripts -->
+			<script type="module" src="./js/main.js"></script>
 	</body>
 </html>
