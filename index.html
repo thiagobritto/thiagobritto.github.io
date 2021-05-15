@@ -21,28 +21,64 @@
 			<div class="container">
 				<div class="nav-wrapper">
 					<a href="./" class="brand-logo">
-						<img id="img-logo" src="./images/icons/logo.png" alt="imagen da logo do site">
+						<img id="img-logo" src="./images/icons/logo.png" alt="imagem da logo do site">
 					</a>
-					<ul id="nav-mobile" class="right hide-on-med-and-down">
-						<li><a href="#">Sass</a></li>
-						<li><a href="#">Components</a></li>
-						<li><a href="#">JavaScript</a></li>
+					<ul class="right hide-on-med-and-down">
+					  <li><a href="sass.html">Sass</a></li>
+					  <li><a href="badges.html">Components</a></li>
+					  <li><a href="collapsible.html">Javascript</a></li>
+					  <li><a href="mobile.html">Mobile</a></li>
 					</ul>
-				</div>
+				</div>		
 			</div>
 		</nav>
+		<ul class="sidenav" id="mobile-menu">
+			<li><a href="sass.html">Sass</a></li>
+			<li><a href="badges.html">Components</a></li>
+			<li><a href="collapsible.html">Javascript</a></li>
+			<li><a href="mobile.html">Mobile</a></li>
+		  </ul>
 	</header> <!-- /HEADER -->
 
 	<!-- CONTENT -->
-	<section>
-
+	<section style="position: relative;">
+		<div class="parallax-container">
+      		<div class="parallax">
+				<div class="overlay">
+					<h3 class="white-text center-align">seja bem vindo ao meu portfolio</h3>
+				</div>
+				  <img src="./images/banner1920x1280.jpg">
+			</div>
+    	</div>
 	</section>
 	<!-- /CONTENT -->
 
 	<!-- FOOTER -->
-	<footer>
-		<p class="center-align">&copy; 2021 - Todos os direitos reservados</p>
-	</footer> <!-- /FOOTER -->
+	<footer class="page-footer black">
+		<div class="container">
+		  <div class="row">
+			<div class="col l6 s12">
+			  <h5 class="white-text">Footer Content</h5>
+			  <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+			</div>
+			<div class="col l4 offset-l2 s12">
+			  <h5 class="white-text">Links</h5>
+			  <ul>
+				<li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+				<li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+				<li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+				<li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+		<div class="footer-copyright">
+		  <div class="container">
+		  	&copy; 2021 - Todos os direitos reservados
+		  	<a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+		  </div>
+		</div>
+	  </footer> <!-- /FOOTER -->
 
 	<!-- SCRIPTS -->
 	<script src="./dist/materialize/js/materialize.min.js"></script>
