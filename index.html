@@ -6,7 +6,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Thiago Britto - Dashboard</title>
-	
+
 	<link rel="icon" href="./images/icons/favicon.png" type="image/png" sizes="16x16">
 	<link href="./dist/materialize/css/materialize.min.css" rel="stylesheet">
 	<link href="./css/set-fonts-materialize-icons.css" rel="stylesheet">
@@ -17,6 +17,7 @@
 
 	<!-- HEADER -->
 	<header>
+		<h1 class="hide">Thiago Britto</h1>
 		<nav class="black">
 			<div class="container">
 				<div class="nav-wrapper">
@@ -24,12 +25,12 @@
 						<img id="img-logo" src="./images/icons/logo.png" alt="imagem da logo do site">
 					</a>
 					<ul class="right hide-on-med-and-down">
-					  <li><a href="sass.html">Sass</a></li>
-					  <li><a href="badges.html">Components</a></li>
-					  <li><a href="collapsible.html">Javascript</a></li>
-					  <li><a href="mobile.html">Mobile</a></li>
+						<li><a href="sass.html">Sass</a></li>
+						<li><a href="badges.html">Components</a></li>
+						<li><a href="collapsible.html">Javascript</a></li>
+						<li><a href="mobile.html">Mobile</a></li>
 					</ul>
-				</div>		
+				</div>
 			</div>
 		</nav>
 		<ul class="sidenav" id="mobile-menu">
@@ -37,7 +38,7 @@
 			<li><a href="badges.html">Components</a></li>
 			<li><a href="collapsible.html">Javascript</a></li>
 			<li><a href="mobile.html">Mobile</a></li>
-		  </ul>
+		</ul>
 	</header> <!-- /HEADER -->
 
 	<!-- CONTENT -->
@@ -45,167 +46,183 @@
 	<!-- BANNER -->
 	<section>
 		<div class="parallax-container">
-      		<div class="parallax">
-				<div class="overlay">
+			<figure class="parallax">
+				<figcaption class="overlay">
 					<h3 class="white-text center-align">Seja bem vindo ao meu portfólio</h3>
-				</div>
-				  <img src="./images/banner1920x1280.jpg">
-			</div>
-    	</div>
+				</figcaption>
+				<img src="./images/banner1920x1280.jpg">
+			</figure>
+		</div>
 	</section> <!-- /BANNER -->
 
-	<!-- SHOW CASE -->
+	<!-- STAKS -->
 	<section class="section-scroll-horizontal">
-		<div class="container">
+		<header class="container">
 			<div class="row">
 				<div class="col s12">
 					<h4 class="black-text">Conhecimentos</h4>
 				</div>
 			</div>
-		</div>
-		<div class="container hide-on-med-and-down box-clean">
+		</header>
+		<section class="container hide-on-med-and-down box-clean">
 			<div class="row box-clean">
-				<div class="col s12 m4">
+				<section class="col s12 m4">
 					<div class="card card-scroll">
-						<div class="card-image">
-						<img src="./images/htmlcssjs.png">
-					</div>
-					<div class="card-content">
-						<span class="card-title black-text">Front end</span>
-						<p>I am a very simple card. I am good at containing small bits of information.
-						I am convenient because I require little markup to use effectively.</p>
-						</div>
-						<div class="card-action">
-						<a href="#" class="red-text">This is a link</a>
-						</div>
-					</div>
-				</div>
-				<div class="col s12 m4">
-					<div class="card card-scroll">
-						<div class="card-image">
-						<img src="./images/phpnodemysql.png">
-					</div>
-					<div class="card-content">
-						<span class="card-title black-text">Back end</span>
-						<p>I am a very simple card. I am good at containing small bits of information.
-						I am convenient because I require little markup to use effectively.</p>
-						</div>
-						<div class="card-action">
-						<a href="#" class="red-text">This is a link</a>
-						</div>
-					</div>
-				</div>
-				<div class="col s12 m4">
-					<div class="card card-scroll">
-						<div class="card-image">
-						<img src="./images/javaelectron.png">
-					</div>
-					<div class="card-content">
-						<span class="card-title black-text">Apps</span>
-						<p>I am a very simple card. I am good at containing small bits of information.
-						I am convenient because I require little markup to use effectively.</p>
-						</div>
-						<div class="card-action">
-						<a href="#" class="red-text">This is a link</a>
-						</div>
-					</div>
-				</div>
-			</div>			
-		</div>
-		<div class="box_wepper hide-on-large-only">
-			<div class="item">
-				<div class="row">
-					<div class="col s12">
-					  <div class="card card-scroll">
-						<div class="card-image">
-							<img src="./images/htmlcssjs.png">
-						</div>
-						<div class="card-content">
-							<span class="card-title black-text">Front end</span>
+						<figure class="card-image">
+							<img src="./images/htmlcssjs.png" alt="html css javascript react">
+							<figcaption>
+								<span class="card-title black-text">Front end</span>
+							</figcaption>
+						</figure>
+						<article class="card-content">
 							<p>I am a very simple card. I am good at containing small bits of information.
-						  	I am convenient because I require little markup to use effectively.</p>
-						</div>
-						<div class="card-action">
-						  <a href="#" class="red-text">This is a link</a>
-						</div>
-					  </div>
+								I am convenient because I require little markup to use effectively.</p>
+						</article>
+						<footer class="card-action">
+							<a href="#" class="red-text">This is a link</a>
+						</footer>
 					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="row">
-					<div class="col s12">
-					  <div class="card card-scroll">
-						<div class="card-image">
-						  <img src="./images/phpnodemysql.png">
-						</div>
-						<div class="card-content">
-							<span class="card-title black-text">Back end</span>
-						  	<p>I am a very simple card. I am good at containing small bits of information.
-						  	I am convenient because I require little markup to use effectively.</p>
-						</div>
-						<div class="card-action">
-						  <a href="#" class="red-text">This is a link</a>
-						</div>
-					  </div>
-					</div>
-				</div>
-			</div>
-			<div class="item">
-				<div class="row">
-					<div class="col s12">
-					  <div class="card card-scroll">
-						<div class="card-image">
-						  <img src="./images/javaelectron.png">
-						</div>
-						<div class="card-content">
-							<span class="card-title black-text">Apps</span>
+				</section>
+				<section class="col s12 m4">
+					<div class="card card-scroll">
+						<figure class="card-image">
+							<img src="./images/phpnodemysql.png" alt="php mysql sql node">
+							<figcaption>
+								<span class="card-title black-text">Back end</span>
+							</figcaption>
+						</figure>
+						<article class="card-content">
 							<p>I am a very simple card. I am good at containing small bits of information.
-						  	I am convenient because I require little markup to use effectively.</p>
+								I am convenient because I require little markup to use effectively.</p>
+						</article>
+						<footer class="card-action">
+							<a href="#" class="red-text">This is a link</a>
+						</footer>
+					</div>
+				</section>
+				<section class="col s12 m4">
+					<div class="card card-scroll">
+						<figure class="card-image">
+							<img src="./images/javaelectron.png" alt="java electronjs react-native">
+							<figcaption>
+								<span class="card-title black-text">Apps</span>
+							</figcaption>
+						</figure>
+						<article class="card-content">
+							<p>I am a very simple card. I am good at containing small bits of information.
+								I am convenient because I require little markup to use effectively.</p>
+						</article>
+						<footer class="card-action">
+							<a href="#" class="red-text">This is a link</a>
+						</footer>
+					</div>
+				</section>
+			</div>
+		</section>
+		<section class="box_wepper hide-on-large-only">
+			<section class="item">
+				<div class="row">
+					<div class="col s12">
+						<div class="card card-scroll">
+							<figure class="card-image">
+								<img src="./images/htmlcssjs.png" alt="html5 css3 javascript bootstrap">
+								<figcaption>
+									<span class="card-title black-text">Front end</span>
+								</figcaption>
+							</figure>
+							<article class="card-content">
+								<p>I am a very simple card. I am good at containing small bits of information.
+									I am convenient because I require little markup to use effectively.</p>
+							</article>
+							<footer class="card-action">
+								<a href="#" class="red-text">This is a link</a>
+							</footer>
 						</div>
-						<div class="card-action">
-						  <a href="#" class="red-text">This is a link</a>
-						</div>
-					  </div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section> <!-- SHOW CASE -->
+			</section>
+			<section class="item">
+				<div class="row">
+					<div class="col s12">
+						<div class="card card-scroll">
+							<figure class="card-image">
+								<img src="./images/phpnodemysql.png" alt="php7.4 mysql8 nodejs react">
+								<figcaption>
+									<span class="card-title black-text">Back end</span>
+								</figcaption>
+							</figure>
+							<article class="card-content">
+								<p>I am a very simple card. I am good at containing small bits of information.
+									I am convenient because I require little markup to use effectively.</p>
+							</article>
+							<footer class="card-action">
+								<a href="#" class="red-text">This is a link</a>
+							</footer>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="item">
+				<div class="row">
+					<div class="col s12">
+						<div class="card card-scroll">
+							<figure class="card-image">
+								<img src="./images/javaelectron.png" alt="java javafx swing spring boot electron react-nativw">
+								<figcaption>
+									<span class="card-title black-text">Apps</span>
+								</figcaption>
+							</figure>
+							<article class="card-content">
+								<p>I am a very simple card. I am good at containing small bits of information.
+									I am convenient because I require little markup to use effectively.</p>
+							</article>
+							<footer class="card-action">
+								<a href="#" class="red-text">This is a link</a>
+							</footer>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+	</section> <!-- /STAKS -->
 
 	<!-- /CONTENT -->
 
 	<!-- FOOTER -->
 	<footer class="page-footer black">
-		<div class="container">
-		  <div class="row">
-			<div class="col l6 s12">
-			  	<h5 class="white-text">
-					Sobre
-				</h5>
-			  	<p class="grey-text text-lighten-4">
-					Esse portfólio foi criado para demonstrar minhas habilidades para possíveis contratantes. 
-					Nele estou utilizando uma das melhores tecnicas de mobile first, juntamente com a lib do 
-					materialize icons.
-				</p>
+		<section class="container">
+			<div class="row">
+				<section class="col l6 s12">
+					<header>
+						<h5 class="white-text">
+							Sobre
+						</h5>
+					</header>
+					<article>
+						<p class="grey-text text-lighten-4">
+							Esse portfólio foi criado para demonstrar minhas habilidades para possíveis contratantes.
+							Nele estou utilizando uma das melhores tecnicas de mobile first, juntamente com a lib do
+							materialize icons.
+						</p>
+					</article>
+				</section>
+				<aside class="col l4 offset-l2 s12">
+					<h5 class="white-text">Links úteis</h5>
+					<ul>
+						<li><a class="grey-text text-lighten-3" href="#!">Guthub</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">Linkedin</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">WhatsApp</a></li>
+						<li><a class="grey-text text-lighten-3" href="#!">E-mail</a></li>
+					</ul>
+				</aside>
 			</div>
-			<div class="col l4 offset-l2 s12">
-			  <h5 class="white-text">Links úteis</h5>
-			  <ul>
-				<li><a class="grey-text text-lighten-3" href="#!">Guthub</a></li>
-				<li><a class="grey-text text-lighten-3" href="#!">Linkedin</a></li>
-				<li><a class="grey-text text-lighten-3" href="#!">WhatsApp</a></li>
-				<li><a class="grey-text text-lighten-3" href="#!">E-mail</a></li>
-			  </ul>
+		</section>
+		<footer class="footer-copyright">
+			<div class="container">
+				&copy; 2021 - Todos os direitos reservados
+				<a class="grey-text text-lighten-4 right" href="#!">Mais Links</a>
 			</div>
-		  </div>
-		</div>
-		<div class="footer-copyright">
-		  <div class="container">
-		  	&copy; 2021 - Todos os direitos reservados
-		  	<a class="grey-text text-lighten-4 right" href="#!">Mais Links</a>
-		  </div>
-		</div>
+		</footer>
 	</footer> <!-- /FOOTER -->
 
 	<!-- SCRIPTS -->
