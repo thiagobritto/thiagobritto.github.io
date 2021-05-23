@@ -1,23 +1,25 @@
 import './src/modules/efeitosMaterializeCSS.js';
-import { frontData } from './src/database/frontEndList.js';
-import { backData } from './src/database/bacEndList.js';
-import { appsData } from './src/database/appsList.js';
+import { frontData, backData, appsData } from './src/database/habilidades/habiledadesData.js';
+import { htmlCssData } from './src/database/projetos/htmlCssData.js';
+import { javascriptData } from './src/database/projetos/javascrptData.js';
+import { phpData } from './src/database/projetos/phpData.js';
 import { func } from './src/functions.js';
 
-const fun = func();
-setElements([...backData,...frontData]);
+addEventListener('DOMContentLoaded', () => {
 
-document.getElementById('front').onclick = e => setElements(frontData);
-document.getElementById('back').onclick = e => setElements(backData);
-document.getElementById('apps').onclick = e => setElements(appsData);
-document.getElementById('all').onclick = e => setElements([...frontData,...backData,...appsData]);
+    const habi = func(document.querySelector('#habilidades .habilidades'));
+    habi.setHabildades([...backData,...frontData]);
+    
+    document.getElementById('front').onclick = () => habi.setHabildades(frontData);
+    document.getElementById('back').onclick = () => habi.setHabildades(backData);
+    document.getElementById('apps').onclick = () => habi.setHabildades(appsData);
+    document.getElementById('all').onclick = () => habi.setHabildades([...frontData,...backData,...appsData]);
 
-function setElements(elements){
-    let habilidades = fun.prepareClone(document.querySelector('#habilidades .habilidades'));
-    elements.map(db => {
-        let body = habilidades.elementClone.querySelector('.col').cloneNode(true);
-        body.querySelector('img').src = db.img;
-        body.querySelector('span').innerText = db.text;
-        habilidades.element.appendChild(body);
-    });
-}
+    const project = func(document.querySelector("#projetos .projetos"));
+    project.setProjects(htmlCssData);
+
+    document.getElementById('htmlcss').onclick = () => project.setProjects(htmlCssData);
+    document.getElementById('javascript').onclick = () => project.setProjects(javascriptData);
+    document.getElementById('php').onclick = () => project.setProjects(phpData);
+    
+});
