@@ -12,11 +12,17 @@ const appsData = [
 const frontData = [
     {
         img: "./images/html.png",
-        text: "texto 1 "
+        text: `
+            <strong>HTML, CSS e JavaScript</strong> são a base do desenvolvimento web, 
+            utilizados para desenvolver sites dinamicos.
+        `
     },
     {
         img: "./images/react.png",
-        text: "texto 2"
+        text: `
+            <strong>React</strong> é uma biblioteca JavaScript para construir interfaces de usuário,
+            usado para construir aplicativos de página única ou <em>SPA</em>.
+        `
     }
 ]
 

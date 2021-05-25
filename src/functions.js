@@ -12,7 +12,7 @@ class Functions {
         listData.map( db => {
             let body = this.elementChild.cloneNode(true);
             body.querySelector('img').src = db.img;
-            body.querySelector('span').innerText = db.text;
+            body.querySelector('span').innerHTML = db.text;
             this.element.appendChild(body);
         });
     }
@@ -21,9 +21,9 @@ class Functions {
         this.element.innerHTML = '';
         listData.map( db => {
             let body = this.elementChild.cloneNode(true);
-            body.querySelector('span').innerText = db.title;
+            body.querySelector('span').innerHTML = db.title;
             body.querySelector('img').src = db.img;
-            body.querySelector('p').innerText = db.article;
+            body.querySelector('p').innerHTML = db.article;
             body.querySelector('a').href = db.linck;
             this.element.appendChild(body);
         });
