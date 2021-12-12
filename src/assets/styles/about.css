@@ -1,0 +1,17 @@
+#about-panel {
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    padding: 20px 0;
+}
+
+#about-panel div.container {
+    display: flex;
+}
+
+#about-panel div.container div {
+    flex: 1;
+}
+
+#about-panel div.container div h2 {
+    margin-bottom: 20px;
+}

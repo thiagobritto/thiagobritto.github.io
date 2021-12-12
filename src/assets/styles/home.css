@@ -1,102 +1,8 @@
-/* header cabecalho */
-
-#cabecalho {
-    background-color: var(--color-header);
-    box-shadow: 0 0 20px #888;
-}
-
-#cabecalho div.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 60px;
-}
-
-#cabecalho #btn-menu {
-    color: var(--color-light-text);
-}
-
-#cabecalho nav {
-    position: fixed;
-    width: 60%;
-    height: 100vh;
-    left: 0;
-    top: 0;
-    background-color: var(--color-background);
-    padding: 10px;
-}
-
-#cabecalho nav ul {
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-}
-
-#cabecalho nav a {
-    display: block;
-    padding: 8px 15px;
-    width: 100%;
-    transition: filter 0.3s, background 0.3s;
-}
-
-#cabecalho nav ul li a:hover {
-    background: #fff;
-    filter: brightness(110%);
-}
-
-#cabecalho #overlay {
-    position: fixed;
-    width: 40%;
-    height: 100vh;
-    right: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-@media screen and (min-width: 768px) {
-    #cabecalho nav {
-        position: static;
-        width: unset;
-        height: unset;
-        background: none;
-        display: block;
-    }
-    #cabecalho nav ul {
-        flex-direction: row;
-    }
-    #cabecalho nav ul li a:hover {
-        background: var(--color-header);
-        filter: brightness(120%);
-    }
-    #cabecalho nav a {
-        flex-direction: row;
-        color: var(--color-light-text);
-    }
-    #cabecalho #overlay,
-    #cabecalho #btn-menu,
-    #cabecalho #logo-menu {
-        display: none;
-    }
-}
-
-.hide {
-    display: none;
-}
-
-.show {
-    display: block;
-}
-
-#logo {
-    color: var(--color-light-text);
-}
-
-
 /* section panel */
 
 #panel {
     width: 100%;
-    height: calc(100vh - 60px);
+    min-height: calc(100vh - 60px);
     background: url('../images/banner_primary.jpg') no-repeat center left;
     background-size: cover;
 }
@@ -139,22 +45,4 @@
     #panel div.label {
         background: rgba(255, 255, 255, 0);
     }
-}
-
-
-/* footer rodape */
-
-#rodape {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    background-color: var(--color-header);
-}
-
-#rodape p,
-#rodape p a {
-    color: var(--color-light-text);
-    text-align: center;
-    font-size: 12px;
 }

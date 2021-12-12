@@ -5,9 +5,9 @@ export default `
         <nav class="hide">
             <a href="/" id="logo-menu">Thiago Britto</a>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="/projects.html">Projects</a></li>
+                <li><a href="/about.html">About</a></li>
             </ul>
         </nav>
         <div class="hide" id="overlay"></div>
