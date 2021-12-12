@@ -8,10 +8,12 @@
     display: flex;
 }
 
-#about-panel div.container div {
-    flex: 1;
-}
-
 #about-panel div.container div h2 {
     margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    #about-panel div.container div {
+        flex: 1;
+    }
 }

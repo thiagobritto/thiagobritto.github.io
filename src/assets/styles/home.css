@@ -2,7 +2,7 @@
 
 #panel {
     width: 100%;
-    min-height: calc(100vh - 60px);
+    height: calc(100vh - 60px);
     background: url('../images/banner_primary.jpg') no-repeat center left;
     background-size: cover;
 }
