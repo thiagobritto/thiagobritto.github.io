@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/icons/favicon-16x16.png">
+
     <title>Thiago Britto</title>
+
     <link rel="stylesheet" href="./src/assets/styles/icon-fonts.css">
     <link rel="stylesheet" href="./src/assets/styles/global.css">
     <link rel="stylesheet" href="./src/assets/styles/projects.css">
@@ -21,55 +27,8 @@
             <h2>Projects</h2>
         </header>
         <main class="container">
-            <div class="main">
-                <div class="card">
-                    <div>
-                        <img src="./src/assets/images/spotify_clone.jpg" alt="spotify clone">
-                        <div class="label">
-                            <h3>Spotify Clone</h3>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus blanditiis sit eaque, quasi ad exercitationem doloribus pariatur voluptatibus,
-                            </p>
-                        </div>
-                        <a href="https://thiagobritto.github.io/Spotify-clone/" class="btn">view</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
-                        <img src="./src/assets/images/tec_blog.jpg" alt="TecBlog">
-                        <div class="label">
-                            <h3>TecBlog</h3>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus blanditiis sit eaque, quasi ad exercitationem doloribus pariatur voluptatibus,
-                            </p>
-                        </div>
-                        <a href="https://thiagobritto.github.io/TecBlog/" class="btn">view</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
-                        <img src="./src/assets/images/jm_viagens.jpg" alt="jm viagens">
-                        <div class="label">
-                            <h3>JM Viagens</h3>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus blanditiis sit eaque, quasi ad exercitationem doloribus pariatur voluptatibus,
-                            </p>
-                        </div>
-                        <a href="https://thiagobritto.github.io/JMViagens/" class="btn">view</a>
-                    </div>
-                </div>
-                <div class="card">
-                    <div>
-                        <img src="./src/assets/images/game_abc.jpg" alt="game abc">
-                        <div class="label">
-                            <h3>Game ABC</h3>
-                            <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus blanditiis sit eaque, quasi ad exercitationem doloribus pariatur voluptatibus,
-                            </p>
-                        </div>
-                        <a href="https://thiagobritto.github.io/game-abc/" class="btn">view</a>
-                    </div>
-                </div>
+            <div id="main">
+                <!-- content dynamic -->
             </div>
         </main>
     </section>
@@ -78,6 +37,7 @@
     <footer id="rodape"></footer>
 
     <script type="module" src="./src/setup.js"></script>
+    <script type="module" src="./src/views/projects/index.js"></script>
 </body>
 
 </html>

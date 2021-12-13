@@ -18,11 +18,10 @@
 
 #panel div.label h1 {
     line-height: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 #socia-destaque {
-    margin-top: 20px;
     display: flex;
     align-items: center;
 }
@@ -43,6 +42,6 @@
         flex: 1;
     }
     #panel div.label {
-        background: rgba(255, 255, 255, 0);
+        background: none;
     }
 }

@@ -1,4 +1,4 @@
-export default `
+export default (`
     <div class="container">
         <a href="/" id="logo">Thiago Britto</a>
         <a href="#" id="btn-menu" class="material-icons">menu</a>
@@ -12,4 +12,4 @@ export default `
         </nav>
         <div class="hide" id="overlay"></div>
     </div>
-`
+`)
