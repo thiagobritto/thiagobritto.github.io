@@ -6,8 +6,8 @@ export default (`
             <a href="/" id="logo-menu">Thiago Britto</a>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/projects.html">Projects</a></li>
                 <li><a href="/about.html">About</a></li>
+                <li><a href="/projects.html">Projects</a></li>
             </ul>
         </nav>
         <div class="hide" id="overlay"></div>
