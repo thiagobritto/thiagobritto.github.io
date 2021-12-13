@@ -22,12 +22,15 @@
 
 #projects-panel .card img {
     width: 100%;
+    cursor: pointer;
 }
 
 #projects-panel .card .label {
     box-shadow: none;
     padding: 10px 20px;
     padding-bottom: 20px;
+    height: 150px;
+    overflow: hidden;
 }
 
 #projects-panel .card .label h3 {

@@ -2,28 +2,28 @@
     "data": [
 
         {
+            "title": "Game ABC",
+            "label": "Game ABC was developed using only JavaScript.",
+            "imgSrc": "./src/assets/images/game_abc.jpg",
+            "link": "https://thiagobritto.github.io/game-abc/"
+        },
+        {
             "title": "Spotifi Clone",
-            "label": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus blanditiis sit eaque, quasi ad exercitationem doloribus pariatur voluptatibus,",
+            "label": "Spotify clone is an academic project built with the intention of practicing the knowledge gained in Bootstrap 4",
             "imgSrc": "./src/assets/images/spotify_clone.jpg",
             "link": "https://thiagobritto.github.io/Spotify-clone/"
         },
         {
             "title": "TecBlog",
-            "label": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus blanditiis sit eaque, quasi ad exercitationem doloribus pariatur voluptatibus,",
+            "label": "This project was built using just HTML5 and CSS3. It was intended to be simple with very little CSS.",
             "imgSrc": "./src/assets/images/tec_blog.jpg",
             "link": "https://thiagobritto.github.io/TecBlog/"
         },
         {
             "title": "JM Viagens",
-            "label": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus blanditiis sit eaque, quasi ad exercitationem doloribus pariatur voluptatibus,",
+            "label": "This site is part of my learning in HTML, one of the first, it does not use any CSS.",
             "imgSrc": "./src/assets/images/jm_viagens.jpg",
             "link": "https://thiagobritto.github.io/JMViagens/"
-        },
-        {
-            "title": "Game ABC",
-            "label": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus blanditiis sit eaque, quasi ad exercitationem doloribus pariatur voluptatibus,",
-            "imgSrc": "./src/assets/images/game_abc.jpg",
-            "link": "https://thiagobritto.github.io/game-abc/"
         }
     ]
 }

@@ -3,8 +3,7 @@ import http from '../../sevices/http.js'
 
 onReady(async doc => {
     http.get('../../src/database/about.json', (req, res) => {
-        const { data } = res.json
-        console.log(data);
-
+        const { aboutText } = res.json
+        doc.getElementById('about-text').innerText = aboutText
     })
 })
