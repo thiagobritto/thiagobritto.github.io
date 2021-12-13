@@ -51,3 +51,32 @@
         width: 25%;
     }
 }
+
+.ovrlayImage {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.imgShow {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 512px;
+}
+
+.imgHide {
+    position: fixed;
+    cursor: pointer;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
