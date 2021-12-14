@@ -1,7 +1,10 @@
 #projects-panel {
     width: 100%;
     min-height: calc(100vh - 60px);
-    padding: 20px 10px;
+}
+
+#projects-panel h2 {
+    margin: 20px 0;
 }
 
 #projects-panel main #main {
@@ -12,12 +15,11 @@
 
 #projects-panel .card {
     width: 100%;
-    padding-top: 20px;
 }
 
 #projects-panel .card div {
-    margin: 0 10px;
-    box-shadow: 0 0 10px #888;
+    margin: 0 10px 30px 10px;
+    box-shadow: 0 0 8px #888;
 }
 
 #projects-panel .card img {

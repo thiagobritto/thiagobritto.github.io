@@ -45,3 +45,90 @@
         background: none;
     }
 }
+
+
+/* section contact */
+
+#contact {
+    min-height: calc(100vh - 60px);
+    margin-bottom: 20px;
+}
+
+#contact header.title {
+    padding: 20px 0;
+}
+
+#contact section.form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#contact section.form section,
+#contact section.form form {
+    width: 100%;
+}
+
+#contact section.form section {
+    background: url('../images/background_staks.png') no-repeat bottom right;
+    background-size: 300px;
+}
+
+#contact section.form section div.overlay-stacks {
+    padding: 10px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+#contact section.form section ul {
+    padding-left: 40px;
+}
+
+@media screen and (min-width: 768px) {
+    #contact section.form section,
+    #contact section.form form {
+        width: 50%;
+    }
+    #contact section.form form {
+        padding-right: 20px;
+    }
+}
+
+#contact section.form form textarea,
+#contact section.form form input[type=text],
+#contact section.form form input[type=email],
+#contact section.form form input[type=submit] {
+    display: block;
+    margin: 15px auto;
+    outline: none;
+    padding: 5px 10px;
+    border: 1px solid #888;
+    width: 100%;
+    font-size: 16px;
+    transition: box-shadow 0.3s;
+}
+
+#contact section.form form input[type=submit] {
+    width: unset;
+}
+
+@media screen and (min-width: 768px) {
+    #contact section.form form input[type=submit] {
+        margin: 20px 0;
+    }
+}
+
+@media screen and (min-width: 1115px) {
+    #contact section.form form textarea,
+    #contact section.form form input[type=text],
+    #contact section.form form input[type=email] {
+        width: 80%;
+        margin: 15px 0;
+    }
+}
+
+#contact section.form form textarea:focus,
+#contact section.form form input[type=text]:focus,
+#contact section.form form input[type=email]:focus {
+    border: none;
+    box-shadow: 0 0 8px #888;
+}
