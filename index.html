@@ -19,7 +19,9 @@
 
 <body>
     <!-- header cabecalho -->
-    <header id="cabecalho"></header>
+    <header id="cabecalho">
+        <!-- content dynamic -->
+    </header>
 
     <!-- section panel -->
     <section id="panel">
@@ -47,9 +49,9 @@
         </header>
         <section class="container form">
             <form>
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="E-mail">
-                <textarea rows="4" placeholder="Message ..."></textarea>
+                <input required name="nameContact" type="text" placeholder="Full Name *" autocomplete="off">
+                <input required name="emailContact" type="email" placeholder="E-mail *" autocomplete="off">
+                <textarea required name="msgContact" rows="4" placeholder="Message ..." autocomplete="off"></textarea>
                 <input class="btn-dark btn-on" type="submit" value="Submit">
             </form>
             <section>
@@ -73,7 +75,9 @@
     </section>
 
     <!-- footer rodape -->
-    <footer id="rodape"></footer>
+    <footer id="rodape">
+        <!-- content dynamic -->
+    </footer>
 
     <script type="module" src="./src/setup.js"></script>
     <script type="module" src="./src/modules/home/index.js"></script>

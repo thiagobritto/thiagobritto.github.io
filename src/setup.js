@@ -4,7 +4,7 @@ import Footer from './components/Footer.js'
 import http from './sevices/http.js'
 
 onReady(async doc => {
-    http.get('../src/config.json', (req, res) => {
+    http.get('/src/config.json', (req, res) => {
         const { title, version } = res.json
         doc.title = `${title} - v${version}`
     })

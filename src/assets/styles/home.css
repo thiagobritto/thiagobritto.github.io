@@ -69,18 +69,19 @@
 }
 
 #contact section.form section {
-    background: url('../images/background_staks.png') no-repeat bottom right;
+    background: url('../images/background_staks.png') no-repeat bottom center;
     background-size: 300px;
 }
 
 #contact section.form section div.overlay-stacks {
-    padding: 10px;
+    padding: 10px 20px;
     height: 100%;
-    background: rgba(255, 255, 255, 0.7);
+    opacity: 0;
 }
 
 #contact section.form section ul {
-    padding-left: 40px;
+    list-style: none;
+    padding-left: 20px;
 }
 
 @media screen and (min-width: 768px) {
