@@ -10,6 +10,5 @@ export default (`
                 <li><a href="/projects.html">Projects</a></li>
             </ul>
         </nav>
-        <div class="hide" id="overlay"></div>
     </div>
 `)

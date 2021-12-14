@@ -13,17 +13,22 @@ onReady(async doc => {
     doc.getElementById('rodape').innerHTML = Footer
 
     doc.getElementById('btn-menu').onclick = () => menuShow(doc)
+
 })
 
 function menuShow(doc) {
     const nav = doc.querySelector('#cabecalho nav')
-    const overlay = doc.querySelector('#overlay')
+    const overlay = doc.createElement('div')
+    const navParent = nav.parentNode
+
     nav.classList.add('show')
-    overlay.classList.add('show')
+    overlay.setAttribute('id', 'overlay')
+    navParent.appendChild(overlay)
     overlay.onclick = () => menuHide(nav, overlay)
+
 }
 
 function menuHide(nav, overlay) {
     nav.classList.remove('show')
-    overlay.classList.remove('show')
+    overlay.remove()
 }
