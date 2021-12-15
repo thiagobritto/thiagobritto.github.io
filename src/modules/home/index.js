@@ -2,6 +2,7 @@ import { doc, alertMessage } from '../../sevices/app.js'
 import chat from '../../sevices/chat.js'
 
 const form = doc.querySelector('#contact form')
+
 form.onsubmit = event => {
     event.preventDefault()
     const { nameContact, emailContact, msgContact } = event.target

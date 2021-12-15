@@ -25,7 +25,7 @@ export default (doc, data, responseCallback) => {
 
     const closed = doc.createElement('a')
     closed.setAttribute('class', 'btn btn-on')
-    closed.innerHTML = 'closed'
+    closed.innerHTML = 'close'
 
     modalBtn.appendChild(closed)
 

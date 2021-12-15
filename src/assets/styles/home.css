@@ -76,6 +76,10 @@
 #contact section.form section div.overlay-stacks {
     padding: 10px 20px;
     height: 100%;
+    user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
     opacity: 0;
 }
 
@@ -101,15 +105,16 @@
     display: block;
     margin: 15px auto;
     outline: none;
-    padding: 5px 10px;
+    padding: 8px 15px;
     border: 1px solid #888;
     width: 100%;
-    font-size: 16px;
+    font-size: 18px;
     transition: box-shadow 0.3s;
 }
 
 #contact section.form form input[type=submit] {
     width: unset;
+    padding: 8px 20px;
 }
 
 @media screen and (min-width: 768px) {
