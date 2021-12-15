@@ -1,72 +1,19 @@
 import { doc } from '../../sevices/app.js'
 import http from '../../sevices/http.js'
+import Card from '../../components/Card.js'
+import imageShow from '../../sevices/renderer/imageShow.js'
 
 http.get('/src/database/projects.json').then(res => {
     const { data } = res
     data.forEach(unityData => {
-        doc.getElementById('main').innerHTML += templateMounted(unityData)
+        doc.getElementById('main').innerHTML += Card(unityData)
     })
-    iterateCollectionCard(doc)
+    setImageShow(doc.getElementById('main'))
 })
 
-function templateMounted(data) {
-    return (`
-        <div class="card">
-            <div>
-                <img src="${data.imgSrc}" alt="${data.title}">
-                <div class="label">
-                    <h3> ${data.title} </h3>
-                    <p> ${data.label} </p>
-                </div>
-                <a href="${data.link}" class="btn-light btn-on" target="_blank">view</a>
-            </div>
-        </div>
-    `)
-}
-
-function iterateCollectionCard(doc) {
-    const [...cards] = doc.querySelectorAll('.card')
-    for (const card of cards) {
-        setEventClickImage(doc, card.querySelector('img'))
-    }
-}
-
-function setEventClickImage(doc, image) {
-    image.onclick = () => {
-        const ovrlayImage = doc.createElement('div')
-        const clear = doc.createElement('span')
-        const img = new Image()
-        const collectionElementsOfImageFullScreen = [
-            ovrlayImage, clear, img
-        ]
-
-        ovrlayImage.setAttribute('class', 'ovrlayImage')
-
-        clear.setAttribute('class', 'imgHide material-icons')
-        clear.innerText = 'clear'
-
-        img.setAttribute('class', 'imgShow')
-        img.src = image.src
-
-        showImageFullScreen(doc, collectionElementsOfImageFullScreen)
-
-        ovrlayImage.onclick = () =>
-            hideImageFullScreen(collectionElementsOfImageFullScreen)
-
-        clear.onclick = () =>
-            hideImageFullScreen(collectionElementsOfImageFullScreen)
-
-    }
-}
-
-function showImageFullScreen(doc, elements) {
-    elements.forEach(element => {
-        doc.body.appendChild(element)
-    });
-}
-
-function hideImageFullScreen(elements) {
-    elements.forEach(element => {
-        element.remove()
-    });
+function setImageShow(divMain) {
+    const imgs = [...divMain.querySelectorAll('img')]
+    imgs.forEach(img => {
+        img.onclick = () => imageShow(doc, img)
+    })
 }

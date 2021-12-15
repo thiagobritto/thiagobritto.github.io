@@ -1,17 +1,22 @@
 const http = {}
 
-// Propeds private
-let request = {}
+// Property private
 let response = {}
+let request = {
+    method: 'GET',
+    cache: 'default',
+    headers: new Headers(),
+}
 
-// Propeds public
+// Property public
 http.baseURL = ''
 
 // Methods public
-http.get = function(url, body = {}) {
+http.get = function(url) {
     return new Promise((resove, reject) => {
         try {
-            fetch(this.baseURL + url)
+            request.method = 'GET'
+            fetch(this.baseURL + url, request)
                 .then(res => res.json()).then(resove).catch(reject)
         } catch (error) {
             reject(error)
@@ -20,44 +25,34 @@ http.get = function(url, body = {}) {
 }
 
 http.post = function(url, body = {}) {
-    let init = {
-        method: 'POST',
-        mode: 'cors',
-        cache: 'default',
-        body: JSON.stringify(body),
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-        },
-    }
-
     return new Promise((resove, reject) => {
         try {
-            fetch(this.baseURL + url, init)
+            request.method = 'POST'
+            bodyRequest(body)
+            fetch(this.baseURL + url, request)
                 .then(res => res.json()).then(resove).catch(reject)
         } catch (error) {
             reject(error)
         }
     })
-
-
 }
 
-/*
-var myHeaders = new Headers();
+http.cors = function(cors = 'cors') {
+    request.mode = cors
+}
 
-var myInit = { method: 'GET',
-               headers: myHeaders,
-               mode: 'cors',
-               cache: 'default' };
+http.headers = {
+    append(key, value) {
+        request.headers.append(key, value)
+    },
+    get(key) {
+        request.headers.get(key)
+    }
+}
 
-fetch('flowers.jpg',myInit)
-.then(function(response) {
-  return response.blob();
-})
-.then(function(myBlob) {
-  var objectURL = URL.createObjectURL(myBlob);
-  myImage.src = objectURL;
-});
-*/
+// Method Private
+function bodyRequest(body) {
+    request.body = JSON.stringify(body)
+}
 
 export default http

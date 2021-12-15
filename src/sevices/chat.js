@@ -1,5 +1,8 @@
-import http from './http.js'
 import { tick } from './app.js'
+import http from './http.js'
+
+http.cors()
+http.headers.append('Content-type', 'application/json; charset=UTF-8')
 
 const chat = {}
 
@@ -25,8 +28,6 @@ chat.send = async function(msg) {
     })
 
 }
-
-export default chat
 
 // Methods private
 function beforeSend(msg) {
@@ -62,6 +63,7 @@ function filterChar(email) {
             email[i] == '!' ||
             email[i] == '#' ||
             email[i] == '*' ||
+            email[i] == ' ' ||
             email[i] == ',' ||
             email[i] == '\'' ||
             email[i] == '\"' ||
@@ -70,3 +72,5 @@ function filterChar(email) {
     }
     return isInvalid
 }
+
+export default chat
