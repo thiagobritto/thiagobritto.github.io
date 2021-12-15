@@ -1,11 +1,18 @@
-export function onReady(on) {
-    window.addEventListener('DOMContentLoaded', event => on(event.target, event))
+import modal from "./renderer/modal.js";
+
+export const doc = window.document
+
+export const tick = () => new Date().getTime()
+
+export const wait = (step) => {
+    const time = tick();
+    while (tick() - time < (step * 1000));
 }
 
-export function validateEmail(email) {
-    return String(email)
-        .toLowerCase()
-        .match(
-            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-        );
-};
+export const alertMessage = (data, callback) => {
+
+    modal(doc, data, (action) => {
+        if (action) return callback()
+    })
+
+}

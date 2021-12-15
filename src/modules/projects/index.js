@@ -1,14 +1,12 @@
-import { onReady } from '../../sevices/app.js'
+import { doc } from '../../sevices/app.js'
 import http from '../../sevices/http.js'
 
-onReady(async doc => {
-    http.get('/src/database/projects.json').then(res => {
-        const { data } = res
-        data.forEach(unityData => {
-            doc.getElementById('main').innerHTML += templateMounted(unityData)
-        })
-        iterateCollectionCard(doc)
+http.get('/src/database/projects.json').then(res => {
+    const { data } = res
+    data.forEach(unityData => {
+        doc.getElementById('main').innerHTML += templateMounted(unityData)
     })
+    iterateCollectionCard(doc)
 })
 
 function templateMounted(data) {
