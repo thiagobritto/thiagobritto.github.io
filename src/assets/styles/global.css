@@ -173,7 +173,7 @@ a {
     filter: brightness(110%);
 }
 
-#cabecalho #overlay {
+#overlay-menu {
     position: fixed;
     width: 40%;
     height: 100vh;
@@ -201,7 +201,7 @@ a {
         flex-direction: row;
         color: var(--color-light-text) !important;
     }
-    #cabecalho #overlay,
+    #overlay-menu,
     #cabecalho #btn-menu,
     #cabecalho #logo-menu {
         display: none;

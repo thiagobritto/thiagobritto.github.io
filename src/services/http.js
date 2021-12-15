@@ -10,6 +10,14 @@ let request = {
 
 // Property public
 http.baseURL = ''
+http.headers = {
+    append(key, value) {
+        request.headers.append(key, value)
+    },
+    get(key) {
+        request.headers.get(key)
+    }
+}
 
 // Methods public
 http.get = function(url) {
@@ -39,15 +47,6 @@ http.post = function(url, body = {}) {
 
 http.cors = function(cors = 'cors') {
     request.mode = cors
-}
-
-http.headers = {
-    append(key, value) {
-        request.headers.append(key, value)
-    },
-    get(key) {
-        request.headers.get(key)
-    }
 }
 
 // Method Private

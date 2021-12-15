@@ -11,7 +11,7 @@ export const wait = (step) => {
 
 export const alertMessage = (data, callback) => {
 
-    modal(doc, data, (action) => {
+    modal(doc, data, action => {
         if (action) return callback()
     })
 
