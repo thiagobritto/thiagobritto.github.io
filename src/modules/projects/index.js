@@ -1,7 +1,7 @@
-import { doc } from '../../sevices/app.js'
-import http from '../../sevices/http.js'
+import { doc } from '../../services/app.js'
+import http from '../../services/http.js'
 import Card from '../../components/Card.js'
-import imageShow from '../../sevices/renderer/imageShow.js'
+import imageShow from '../../services/renderer/imageShow.js'
 
 http.get('/src/database/projects.json').then(res => {
     const { data } = res

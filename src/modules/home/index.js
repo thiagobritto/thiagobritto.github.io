@@ -1,5 +1,5 @@
-import { doc, alertMessage } from '../../sevices/app.js'
-import chat from '../../sevices/chat.js'
+import { doc, alertMessage } from '../../services/app.js'
+import chat from '../../services/chat.js'
 
 const form = doc.querySelector('#contact form')
 

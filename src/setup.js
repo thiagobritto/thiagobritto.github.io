@@ -1,5 +1,5 @@
-import { doc, alertMessage } from './sevices/app.js'
-import http from './sevices/http.js'
+import { doc } from './services/app.js'
+import http from './services/http.js'
 import Header from './components/Header.js'
 import Footer from './components/Footer.js'
 
@@ -12,7 +12,6 @@ doc.getElementById('cabecalho').innerHTML = Header
 doc.getElementById('rodape').innerHTML = Footer
 
 doc.getElementById('btn-menu').onclick = () => menuShow(doc)
-
 
 function menuShow(doc) {
     const nav = doc.querySelector('#cabecalho nav')
