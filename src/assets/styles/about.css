@@ -5,10 +5,32 @@
 
 #about-panel div.container {
     display: flex;
+    flex-wrap: wrap;
 }
 
 #about-panel h2 {
     margin: 20px 0;
+}
+
+#about-panel div.container div{
+    width: 100%;
+}
+/*  */
+
+.stacks{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 30px;
+}
+
+.stacks img{
+    width: 100%;
+}
+
+.email-to{
+    display: flex;
+    align-items: center;
 }
 
 @media screen and (min-width: 768px) {
