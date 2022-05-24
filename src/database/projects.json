@@ -2,26 +2,26 @@
     "data": [
 
         {
-            "title": "Game ABC",
-            "label": "Game ABC was developed using only JavaScript.",
+            "title": "Jogo do ABC",
+            "label": "O jogo é bem simples, os pontos baseiam-se nas letras do alfabeto. Jogo feito apenas com JavaScript",
             "imgSrc": "./src/assets/images/game_abc.jpg",
             "link": "https://thiagobritto.github.io/game-abc/"
         },
         {
             "title": "Spotifi Clone",
-            "label": "Spotify clone is an academic project built with the intention of practicing the knowledge gained in Bootstrap 4",
+            "label": "Spotify clone é um projeto compativel com dispositivos moveis, feito em HTML5, CSS3 e BOOTSTRAP 4.",
             "imgSrc": "./src/assets/images/spotify_clone.jpg",
             "link": "https://thiagobritto.github.io/Spotify-clone/"
         },
         {
             "title": "TecBlog",
-            "label": "This project was built using just HTML5 and CSS3. It was intended to be simple with very little CSS.",
+            "label": "TecBlog é um layout baseado em HTML e CSS simples.",
             "imgSrc": "./src/assets/images/tec_blog.jpg",
             "link": "https://thiagobritto.github.io/TecBlog/"
         },
         {
             "title": "JM Viagens",
-            "label": "This site is part of my learning in HTML, one of the first, it does not use any CSS.",
+            "label": "JM Viagens é um layout feito apenas com HTML.",
             "imgSrc": "./src/assets/images/jm_viagens.jpg",
             "link": "https://thiagobritto.github.io/JMViagens/"
         }
