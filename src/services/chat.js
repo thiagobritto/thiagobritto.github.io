@@ -20,9 +20,9 @@ chat.send = async function(msg) {
         }).then(res => {
             if (res.ok) {
                 window.localStorage.setItem('tb_contact_site', tick())
-                resove('Message sent successfully!')
+                resove('Mensagem enviada com sucesso!')
             } else {
-                reject('Error with the api, please contact us at: thiagobritto.developer@gmail.com')
+                reject('Algo deu errado, contacte-me através do email thiago britto.developer@gmail.com')
             }
         }).catch(reject)
     })

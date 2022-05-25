@@ -14,12 +14,12 @@ form.onsubmit = event => {
             text: msgContact.value
         }).then(res => {
             alertMessage({
-                title: 'Successfully!',
+                title: 'Sucesso!',
                 message: res
             }, clean)
         }).catch(err => {
             alertMessage({
-                title: 'Warning!',
+                title: 'Aviso!',
                 message: err
             }, clean)
         })
