@@ -2,7 +2,7 @@
     "data": [
         {
             "title": "Spotifi Clone",
-            "label": "Spotify clone é um projeto compativel com dispositivos moveis, feito em HTML5, CSS3 e BOOTSTRAP 4.",
+            "label": "Um clone de uma bigtec de musicas bem famosa. Nesse projeto alem de utilizar as stacks padrão, também é utilizado a lib do Bootstrap na verção 4.",
             "imgSrc": "assets/images/m_spotify_clone.webp",
             "link": "https://thiagobritto.github.io/Spotify-clone/",
             "stacks": [
@@ -11,7 +11,7 @@
         },
         {
             "title": "Jogo do ABC",
-            "label": "O jogo é bem simples, os pontos baseiam-se nas letras do alfabeto. Jogo feito apenas com JavaScript",
+            "label": "O jogo e bem simples, se trata de uma serie de obstaculos onde o jogador tem que passa para pontuar. A logica do jogo e feita com pontuação feita por letras como a-z, aa-az, aaa-aaz ...",
             "imgSrc": "assets/images/m_game_abc.webp",
             "link": "https://thiagobritto.github.io/game-abc/",
             "stacks": [
@@ -20,7 +20,7 @@
         },
         {
             "title": "TecBlog",
-            "label": "TecBlog é um layout baseado em HTML e CSS simples.",
+            "label": "Este blog funcional porem feito com um layout estatico é um exemplo de como se desenvolvia sites a pouco tempo atrás.",
             "imgSrc": "assets/images/m_tec_blog.webp",
             "link": "https://thiagobritto.github.io/TecBlog/",
             "stacks": [
@@ -29,7 +29,7 @@
         },
         {
             "title": "JM Viagens",
-            "label": "JM Viagens é um layout feito apenas com HTML.",
+            "label": "O site é feito apenas com &lt;table&gt; do HTML. O desafio foi construir um site com nenhum CSS.",
             "imgSrc": "assets/images/m_jm_viagens.webp",
             "link": "https://thiagobritto.github.io/JMViagens/",
             "stacks": [
