@@ -6,9 +6,7 @@ export default data => (`
         <div class="descricao">
             <h2>${data.title}</h2>
             <p>${data.label}</p>
-            <br>
             <div class="h3">stacks</div>
-            <br>
             <div class="stacks">
                 ${stacks(data.stacks)}
             </div>

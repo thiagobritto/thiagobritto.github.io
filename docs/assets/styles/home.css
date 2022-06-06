@@ -6,7 +6,7 @@
 .portfolio div.item {
   margin-bottom: 20px;
   width: 100%;
-  height: 355px;
+  min-height: 355px;
   cursor: pointer;
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.102);
@@ -32,6 +32,10 @@ div.item div.descricao {
 
 div.item div.descricao h2 {
   margin-bottom: 10px;
+}
+
+div.item div.stacks {
+  margin-top: 10px;
 }
 
 @media screen and (min-width: 768px) {
