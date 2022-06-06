@@ -1,0 +1,40 @@
+{
+    "data": [
+        {
+            "title": "Spotifi Clone",
+            "label": "Spotify clone é um projeto compativel com dispositivos moveis, feito em HTML5, CSS3 e BOOTSTRAP 4.",
+            "imgSrc": "assets/images/m_spotify_clone.webp",
+            "link": "https://thiagobritto.github.io/Spotify-clone/",
+            "stacks": [
+                "html", "css", "javascript", "bootstrap"
+            ]
+        },
+        {
+            "title": "Jogo do ABC",
+            "label": "O jogo é bem simples, os pontos baseiam-se nas letras do alfabeto. Jogo feito apenas com JavaScript",
+            "imgSrc": "assets/images/m_game_abc.webp",
+            "link": "https://thiagobritto.github.io/game-abc/",
+            "stacks": [
+                "html", "css", "javascript"
+            ]
+        },
+        {
+            "title": "TecBlog",
+            "label": "TecBlog é um layout baseado em HTML e CSS simples.",
+            "imgSrc": "assets/images/m_tec_blog.webp",
+            "link": "https://thiagobritto.github.io/TecBlog/",
+            "stacks": [
+                "html", "css"
+            ]
+        },
+        {
+            "title": "JM Viagens",
+            "label": "JM Viagens é um layout feito apenas com HTML.",
+            "imgSrc": "assets/images/m_jm_viagens.webp",
+            "link": "https://thiagobritto.github.io/JMViagens/",
+            "stacks": [
+                "html"
+            ]
+        }
+    ]
+}

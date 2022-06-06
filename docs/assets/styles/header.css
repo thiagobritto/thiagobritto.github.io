@@ -1,0 +1,68 @@
+.nav-background {
+  height: 75vh;
+  background: var(--color-1);
+}
+
+.cabecalho {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  height: 60px;
+  padding: 0 20px;
+}
+
+.cabecalho-logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo-top {
+  color: var(--light-text-color);
+  text-decoration: none;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav-menu ul.menu {
+  list-style: none;
+  display: none;
+}
+
+.nav-menu ul li a {
+  color: var(--light-text-color);
+  text-decoration: none;
+}
+
+.nav-menu button.btn-menu {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.nav-menu button.btn-menu i {
+  color: var(--light-text-color);
+  cursor: pointer;
+}
+
+.destaque {
+  height: calc(100% - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.destaque h1,
+.destaque a.github {
+  color: var(--light-text-color);
+  text-decoration: none;
+}
+
+.destaque a.github:hover {
+  text-decoration: underline;
+}
