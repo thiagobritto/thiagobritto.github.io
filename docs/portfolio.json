@@ -1,8 +1,17 @@
 {
     "data": [
         {
-            "title": "Spotifi Clone",
-            "label": "Um clone de uma bigtec de musicas bem famosa. Nesse projeto alem de utilizar as stacks padrão, também é utilizado a lib do Bootstrap na verção 4.",
+            "title": "SuaAgencia",
+            "label": "O projeto visa o desenvolvimento de aplicações de autoria, passando pelos processos de escolha da tipografia, paleta de cores, imagens e entre outros, nele estou fazendo uso de grid layout em conjunto com flexbox layout do CSS3.",
+            "imgSrc": "assets/images/m_sua_agencia.webp",
+            "link": "https://thiagobritto.github.io/SuaAgencia/",
+            "stacks": [
+                "html", "css", "javascript"
+            ]
+        },
+        {
+            "title": "Spotify Clone",
+            "label": "Um clone de uma bigtec de musicas bem famosa. Nesse projeto alem das stacks padrão, também é utilizado a lib do Bootstrap na verção 4.",
             "imgSrc": "assets/images/m_spotify_clone.webp",
             "link": "https://thiagobritto.github.io/Spotify-clone/",
             "stacks": [
@@ -11,7 +20,7 @@
         },
         {
             "title": "Jogo do ABC",
-            "label": "O jogo e bem simples, se trata de uma serie de obstaculos onde o jogador tem que passa para pontuar. A logica do jogo e feita com pontuação feita por letras como a-z, aa-az, aaa-aaz ...",
+            "label": "O jogo é bem simples, se trata de uma serie de obstaculos onde o jogador tem que passa para pontuar. A logica do jogo e feita com pontuação feita por letras como a-z, aa-az, aaa-aaz ...",
             "imgSrc": "assets/images/m_game_abc.webp",
             "link": "https://thiagobritto.github.io/game-abc/",
             "stacks": [
