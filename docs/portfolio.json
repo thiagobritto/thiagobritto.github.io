@@ -1,7 +1,7 @@
 {
     "data": [
         {
-            "title": "SuaAgencia",
+            "title": "Sua<wbr>Agencia",
             "label": "O projeto visa o desenvolvimento de aplicações de autoria, passando pelos processos de escolha da tipografia, paleta de cores, imagens e entre outros, nele estou fazendo uso de grid layout em conjunto com flexbox layout do CSS3.",
             "imgSrc": "assets/images/m_sua_agencia.webp",
             "link": "https://thiagobritto.github.io/SuaAgencia/",
